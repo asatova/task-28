@@ -1,28 +1,24 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     overflow: hidden;
     background-color: black;
 }
-.fa-instagram {
-    position: absolute;
-    top: -20px;
-    animation: fall  linear forwards;
-}
 
-.fa-telegram {
+.fab {
     position: absolute;
-    top: -20px;
-    animation: fall  linear forwards;
+    animation: fall linear forwards;
 }
 
 @keyframes fall {
+    from {
+        transform: translateY(-20px);
+    }
     to {
         transform: translateY(100vh);
     }
-
 }
